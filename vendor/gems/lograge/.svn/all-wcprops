@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge
+END
+Guardfile
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/Guardfile
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/Rakefile
+END
+lograge.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/lograge.gemspec
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/.gitignore
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/.travis.yml
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/Gemfile
+END
+.rspec
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/.rspec
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/README.md
+END

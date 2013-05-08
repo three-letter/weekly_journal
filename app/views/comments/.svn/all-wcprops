@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/app/views/comments
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/GCR/GRS/!svn/ver/1910/Projects/Techplatform/app/views/comments/index.html.erb
+END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/app/views/comments/create.js.erb
+END
+_comment.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/app/views/comments/_comment.html.erb
+END
+destroy.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/GCR/GRS/!svn/ver/1274/Projects/Techplatform/app/views/comments/destroy.js.erb
+END

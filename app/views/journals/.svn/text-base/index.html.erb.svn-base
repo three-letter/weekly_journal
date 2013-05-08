@@ -1,0 +1,26 @@
+<% content_for :title, "工作日志" %>
+<br>
+
+<%= link_to "新建工作日志", new_journal_path, :class => 'btn btn-primary' %>
+<br>
+<hr>
+
+<% @journals.each do |journal| %>
+  <div class="dl-horizontal">
+  	 <h3>
+  		<%= journal.created_at.to_date %>
+  	 </h3>
+    <dl class="dl-horizontal">
+  		<br>
+  		<%= g_format journal.content %>
+    </dl>
+	<br>
+	<hr>
+	<br>
+  </div>
+<% end %>
+
+
+<%= link_to "新建工作日志", new_journal_path, :class => 'btn btn-primary' %>
+
+<%= will_paginate_c @journals %>

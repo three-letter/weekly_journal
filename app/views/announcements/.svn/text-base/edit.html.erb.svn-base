@@ -1,0 +1,7 @@
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %><span class="divider">/</span></li>
+  <li><%= link_to "全站通告", announcements_path %><span class="divider">/</span></li>
+  <li class="active">修改全站通告</li>
+</ul>
+
+<%= render 'form' %>

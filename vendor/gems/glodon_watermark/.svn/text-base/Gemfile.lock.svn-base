@@ -1,0 +1,14 @@
+PATH
+  remote: .
+  specs:
+    glodon_watermark (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  glodon_watermark!

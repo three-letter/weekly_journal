@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/GCR/GRS/!svn/ver/2645/Projects/Techplatform/app/controllers
+END
+statistics_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/GCR/GRS/!svn/ver/1711/Projects/Techplatform/app/controllers/statistics_controller.rb
+END
+announcements_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/GCR/GRS/!svn/ver/1536/Projects/Techplatform/app/controllers/announcements_controller.rb
+END
+journals_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/GCR/GRS/!svn/ver/2419/Projects/Techplatform/app/controllers/journals_controller.rb
+END
+weekly_journals_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/GCR/GRS/!svn/ver/2645/Projects/Techplatform/app/controllers/weekly_journals_controller.rb
+END
+code_reviews_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/GCR/GRS/!svn/ver/1935/Projects/Techplatform/app/controllers/code_reviews_controller.rb
+END
+user_actions_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/GCR/GRS/!svn/ver/1913/Projects/Techplatform/app/controllers/user_actions_controller.rb
+END
+action_roles_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/app/controllers/action_roles_controller.rb
+END
+users_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/GCR/GRS/!svn/ver/1568/Projects/Techplatform/app/controllers/users_controller.rb
+END
+application_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/app/controllers/application_controller.rb
+END
+positive_energies_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/GCR/GRS/!svn/ver/1536/Projects/Techplatform/app/controllers/positive_energies_controller.rb
+END
+comments_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/GCR/GRS/!svn/ver/1703/Projects/Techplatform/app/controllers/comments_controller.rb
+END
+upload_files_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/GCR/GRS/!svn/ver/2089/Projects/Techplatform/app/controllers/upload_files_controller.rb
+END
+home_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/GCR/GRS/!svn/ver/2514/Projects/Techplatform/app/controllers/home_controller.rb
+END
+posts_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/GCR/GRS/!svn/ver/1553/Projects/Techplatform/app/controllers/posts_controller.rb
+END

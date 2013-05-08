@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/GCR/GRS/!svn/ver/1935/Projects/Techplatform/db/migrate
+END
+20121117035116_create_user_actions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/db/migrate/20121117035116_create_user_actions.rb
+END
+20121027095507_create_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/db/migrate/20121027095507_create_roles.rb
+END
+20121210012354_add_more_indexes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/db/migrate/20121210012354_add_more_indexes.rb
+END
+20121027095729_create_action_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/GCR/GRS/!svn/ver/1103/Projects/Techplatform/db/migrate/20121027095729_create_action_roles.rb
+END
+20121119144200_create_upload_files.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/GCR/GRS/!svn/ver/1114/Projects/Techplatform/db/migrate/20121119144200_create_upload_files.rb
+END
+20121130025107_create_weekly_journal_votes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/db/migrate/20121130025107_create_weekly_journal_votes.rb
+END
+20130115060421_create_code_reviews.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/GCR/GRS/!svn/ver/1935/Projects/Techplatform/db/migrate/20130115060421_create_code_reviews.rb
+END
+20121203094851_remove_tmp_id_from_weekly_journal.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/GCR/GRS/!svn/ver/1319/Projects/Techplatform/db/migrate/20121203094851_remove_tmp_id_from_weekly_journal.rb
+END
+20121027091546_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/db/migrate/20121027091546_create_users.rb
+END
+20121217024350_create_announcements.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/GCR/GRS/!svn/ver/1536/Projects/Techplatform/db/migrate/20121217024350_create_announcements.rb
+END
+20130112064403_change_column_name_of_journals.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/GCR/GRS/!svn/ver/1916/Projects/Techplatform/db/migrate/20130112064403_change_column_name_of_journals.rb
+END
+20121127110136_add_employee_id_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/GCR/GRS/!svn/ver/1238/Projects/Techplatform/db/migrate/20121127110136_add_employee_id_to_user.rb
+END
+20121118102840_create_weekly_journals.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/db/migrate/20121118102840_create_weekly_journals.rb
+END
+20121219055635_add_avatar_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/GCR/GRS/!svn/ver/1553/Projects/Techplatform/db/migrate/20121219055635_add_avatar_to_user.rb
+END
+20121130032017_add_week_to_weekly_journal_vote.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/GCR/GRS/!svn/ver/1319/Projects/Techplatform/db/migrate/20121130032017_add_week_to_weekly_journal_vote.rb
+END
+20121122094119_add_tmp_id_to_weekly_journal.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/GCR/GRS/!svn/ver/1199/Projects/Techplatform/db/migrate/20121122094119_add_tmp_id_to_weekly_journal.rb
+END
+20121118103019_create_positive_energies.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/GCR/GRS/!svn/ver/1103/Projects/Techplatform/db/migrate/20121118103019_create_positive_energies.rb
+END
+20130112062313_create_journals.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/GCR/GRS/!svn/ver/1916/Projects/Techplatform/db/migrate/20130112062313_create_journals.rb
+END
+20121128030310_add_video_to_upload_file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/GCR/GRS/!svn/ver/1319/Projects/Techplatform/db/migrate/20121128030310_add_video_to_upload_file.rb
+END
+20121122060718_add_name_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/GCR/GRS/!svn/ver/1182/Projects/Techplatform/db/migrate/20121122060718_add_name_to_users.rb
+END
+20121121093816_create_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/GCR/GRS/!svn/ver/1182/Projects/Techplatform/db/migrate/20121121093816_create_comments.rb
+END

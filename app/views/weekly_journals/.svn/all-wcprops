@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/GCR/GRS/!svn/ver/2645/Projects/Techplatform/app/views/weekly_journals
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/app/views/weekly_journals/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/GCR/GRS/!svn/ver/2645/Projects/Techplatform/app/views/weekly_journals/index.html.erb
+END
+_pagination.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/app/views/weekly_journals/_pagination.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/GCR/GRS/!svn/ver/1282/Projects/Techplatform/app/views/weekly_journals/new.html.erb
+END
+_journal_nav.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/GCR/GRS/!svn/ver/1281/Projects/Techplatform/app/views/weekly_journals/_journal_nav.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/GCR/GRS/!svn/ver/2579/Projects/Techplatform/app/views/weekly_journals/show.html.erb
+END
+_vote_function.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/GCR/GRS/!svn/ver/2506/Projects/Techplatform/app/views/weekly_journals/_vote_function.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/app/views/weekly_journals/_form.html.erb
+END

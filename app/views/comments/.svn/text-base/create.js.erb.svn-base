@@ -1,0 +1,15 @@
+<% if @comment.from_root? %>
+  <% unless @comment.new_record? %>
+    $("#comments_group").append("<%= j render(@comment) %>");
+    $("#comment_content").val(null);
+  <% end %>
+  $("#comments_group").prepend("<%= raw (@flash_content) %>");
+  $(".alert").fadeOut(3000);
+<% else %>
+  <% unless @comment.new_record? %>
+    $("#comment_group<%= @comment.commentable_id %>").append("<%= j render(@comment) %>");
+    $("#content<%= @comment.commentable_id %>").val(null);
+  <% end %>
+  $("#replay_form<%= @comment.commentable_id %>").prepend("<%= raw (@flash_content) %>");
+  $(".alert").fadeOut(3000);
+<% end %>

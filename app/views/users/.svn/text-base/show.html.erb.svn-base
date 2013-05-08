@@ -1,0 +1,16 @@
+<% content_for :title, "用户信息" %>
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %> <span class="divider">/</span></li>
+  <li class="active"><%= @user.name %></li> 
+</ul>
+
+当前展示照片：
+<%= avatar(@user) %>
+<br>
+<hr>
+<br>
+修改展示照片：
+<%= simple_form_for @user do |f| %>
+  <%= f.input :avatar, multiple: true, :type => :file, :label => "." %>
+  <%= f.submit "更新", :class => 'btn btn-primary' %>
+<% end %>

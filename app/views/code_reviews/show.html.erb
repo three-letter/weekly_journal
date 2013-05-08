@@ -1,0 +1,22 @@
+<% content_for :title, "代码审查" %>
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %> <span class="divider">/</span></li>
+  <li><%= link_to "代码审查", code_reviews_path %><span class="divider">/</span></li>
+  <li class="active"><%= @code_review.title %></li> 
+</ul>
+
+<h3>
+  <%= avatar(@code_review.author) %>
+  &nbsp;&nbsp;&nbsp;<%= @code_review.title %>
+</h3>
+
+<br>
+
+<%= g_format @code_review.content %>
+
+<div class="form-actions">
+  <% if current_user.can_edit?(@code_review) %>
+    <%= link_to "修改", edit_code_review_path(@code_review), :class => 'btn' %>
+    <%= link_to "删除", code_review_path(@code_review), :method => 'delete', :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-danger' %>
+  <% end %>
+</div>

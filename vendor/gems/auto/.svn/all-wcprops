@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/GCR/GRS/!svn/ver/2419/Projects/Techplatform/vendor/gems/auto
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/GCR/GRS/!svn/ver/2419/Projects/Techplatform/vendor/gems/auto/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/GCR/GRS/!svn/ver/2419/Projects/Techplatform/vendor/gems/auto/Rakefile
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/GCR/GRS/!svn/ver/2419/Projects/Techplatform/vendor/gems/auto/.gitignore
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/GCR/GRS/!svn/ver/2419/Projects/Techplatform/vendor/gems/auto/Gemfile
+END
+auto.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/GCR/GRS/!svn/ver/2419/Projects/Techplatform/vendor/gems/auto/auto.gemspec
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/GCR/GRS/!svn/ver/2419/Projects/Techplatform/vendor/gems/auto/README.md
+END

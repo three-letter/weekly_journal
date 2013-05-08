@@ -1,0 +1,8 @@
+<% content_for :title, "代码审查" %>
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %> <span class="divider">/</span></li>
+  <li><%= link_to "代码审查", code_reviews_path %><span class="divider">/</span></li>
+  <li class="active">新建代码审查</li>
+</ul>
+
+<%= render 'form' %>

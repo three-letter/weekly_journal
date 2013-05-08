@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  host: localhost
+  database: tech_platform
+  encoding: unicode
+  port: 5432
+  username: postgres
+  password: 123qwe!@#
+  pool: 5
+
+test:
+  adapter: postgresql
+  host: localhost
+  database: tech_platform_test
+  encoding: unicode
+  port: 5432
+  username: postgres
+  password: 123qwe!@#
+  pool: 5
+
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000

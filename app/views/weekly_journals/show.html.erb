@@ -1,0 +1,55 @@
+<% content_for :title, "周反思" %>
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %> <span class="divider">/</span></li>
+  <li><%= link_to "周反思", weekly_journals_path(:week => @weekly_journal.week) %> <span class="divider">/</span></li>
+  <li class="active"><%= @weekly_journal.title %></li>
+</ul>
+<%= render "journal_nav" %>
+
+<h3>
+
+  <%= @weekly_journal.title %>&nbsp;&nbsp;&nbsp;<%= render :partial => "vote_function", :locals => {:weekly_journal => @weekly_journal} %>&nbsp;&nbsp;&nbsp;
+  <%= avatar(@weekly_journal.author) %>
+</h3>
+<%= @weekly_journal.created_at.to_s(:time) %>&nbsp;&nbsp;&nbsp;
+<%= link_to @weekly_journal.author_name, posts_path(:user_id => @weekly_journal.user_id, :class=>"name") %>
+<% if (@weekly_journal.votes_count > 0) %>
+  &nbsp;&nbsp;投票人:
+  <% @weekly_journal.weekly_journal_votes.map(&:user).each do |cur_user| %>
+    <%= link_to cur_user.name, posts_path(:user_id => cur_user.id, :class=>"name") %>&nbsp;
+  <% end %>
+<% end -%>
+
+<br>
+<%= g_format @weekly_journal.content %>
+
+<div class="form-actions">
+  <% if current_user.can_edit?(@weekly_journal) %>
+    <%= link_to "修改", edit_weekly_journal_path(@weekly_journal), :class => 'btn' %>
+    <%= link_to "删除", weekly_journal_path(@weekly_journal), :method => 'delete', :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-danger' %>
+  <% end %>
+</div>
+
+<h3>留言：</h3>
+<hr>
+<div id="comments_group">
+<%= simple_form_for Comment.new, :remote => true do |f| %>
+  <%= f.input :content, :label => '回复内容(新增@功能，热烈测试中)', :input_html => { :class => "span10", :rows => 8 } %>
+  <%= hidden_field_tag :weekly_journal_id, @weekly_journal.id %>
+  <%= f.submit "提交", :class => 'btn btn-primary' %>
+  <%= link_to "上一篇", @weekly_journal.previous if @weekly_journal.previous %>
+  <%= link_to "下一篇", @weekly_journal.next if @weekly_journal.next %>
+<% end %>
+
+<% @comments = @weekly_journal.comments.includes(:comments).order("created_at ASC") %>
+<%= render @comments unless @comments.blank? %>
+</div>
+
+<br>
+
+<script>
+  data = <%=raw User::USERS_FROM_CMD %>
+  $('textarea').atwho("@", {'data':data});
+</script>
+
+<%= render "journal_nav" %>

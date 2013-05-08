@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  host: localhost
+  database: tech_platform
+  encoding: utf-8
+  port: 5432
+  username: postgres
+  password: lyu302
+  pool: 5
+
+test:
+  adapter: postgresql
+  host: localhost
+  database: tech_platform_test
+  encoding: utf-8
+  port: 5432
+  username: postgres
+  password: lyu302
+  pool: 5
+

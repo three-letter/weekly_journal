@@ -1,0 +1,28 @@
+<% content_for :title, "文件管理" %>
+<br>
+<%= render "images" %>
+<br>
+
+<br>
+<%= render "videos" %>
+<br>
+
+<div id="upload_files">
+  <% @upload_files.each do |upload_file| %>
+    <%= render :partial => "image", :locals => {:image => upload_file} if upload_file.image? %>
+    <%= render :partial => "video", :locals => {:video => upload_file} if upload_file.video? %>
+  <% end %>
+</div>
+
+
+<script id="template-upload" type="text/x-tmpl">
+<div class="upload">
+  {%=o.name%}
+  <div class="progress progress-success"><div class="bar" style="width: 0%"></div></div>
+</div>
+</script>
+
+
+<script src="http://releases.flowplayer.org/5.2.0/flowplayer.min.js"></script>
+<link rel="stylesheet" type="text/css"
+   href="http://releases.flowplayer.org/5.2.0/skin/minimalist.css" />

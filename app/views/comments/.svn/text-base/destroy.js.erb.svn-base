@@ -1,0 +1,3 @@
+$("#whole_comment<%= params[:id] %>").fadeOut(1000);
+$("#whole_comment<%= params[:id] %>").before("<%= raw (@flash_content) %>");
+$(".alert").fadeOut(4000);

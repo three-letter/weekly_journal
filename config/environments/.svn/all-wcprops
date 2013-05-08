@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/GCR/GRS/!svn/ver/2506/Projects/Techplatform/config/environments
+END
+test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/config/environments/test.rb
+END
+development.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/GCR/GRS/!svn/ver/1477/Projects/Techplatform/config/environments/development.rb
+END
+production.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/GCR/GRS/!svn/ver/2506/Projects/Techplatform/config/environments/production.rb
+END

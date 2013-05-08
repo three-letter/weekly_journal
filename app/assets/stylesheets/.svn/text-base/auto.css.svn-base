@@ -1,0 +1,46 @@
+._auto_container{
+  border:1px solid #FF0000;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+._auto_center_container{
+  height: 26px;
+  margin: 0;
+  padding: 0;
+}
+._auto_selected{
+  float:left;
+  margin: 0;
+  padding: 0;
+}
+._auto_selected>li{
+  float:left;
+  list-style: none;
+  margin:4px;
+  paddin:0;
+}
+._auto_selected>li:hover{
+  background-color: #d2d2d2;
+}
+._auto_to_select{
+  float:left;
+}
+._auto_tips{
+  position: relative;
+  border:1px solid #d2d2d2;
+  background-color: white;
+  display:none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+._auto_tips li{
+  list-style: none;
+}
+._auto_tips li:hover{
+  background-color: #d2d2d2;
+}
+._auto_tips li>a{
+  float:right;
+}

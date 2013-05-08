@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/GCR/GRS/!svn/ver/2632/Projects/Techplatform/test/unit
+END
+comment_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/GCR/GRS/!svn/ver/2540/Projects/Techplatform/test/unit/comment_test.rb
+END
+weekly_journal_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/GCR/GRS/!svn/ver/2632/Projects/Techplatform/test/unit/weekly_journal_test.rb
+END
+positive_energy_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/test/unit/positive_energy_test.rb
+END
+user_action_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/test/unit/user_action_test.rb
+END

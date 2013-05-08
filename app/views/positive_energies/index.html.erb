@@ -1,0 +1,38 @@
+<% content_for :title, "正能量" %>
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %> <span class="divider">/</span></li>
+  <li class="active">正能量</li>
+</ul>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>内容</th>
+      <th>作者</th>
+      <th width = 80px>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @positive_energies.each do |positive_energy| %>
+      <tr>
+        <td><%= positive_energy.content %></td>
+        <td width=60><%= positive_energy.author_name %></td>
+        <td>
+          <% if current_user.can_edit?(positive_energy) %>
+            <%= link_to edit_icon, edit_positive_energy_path(positive_energy) %>&nbsp;&nbsp;&nbsp;
+            <%= link_to delete_icon, positive_energy_path(positive_energy), :method => :delete, :data => { :confirm => "确定吗？" } %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= html_escape("<script>
+  alert(document.cookie)
+</script>") %>
+
+<%= link_to "新建正能量", new_positive_energy_path, :class => 'btn btn-primary' %>
+
+
+<%= will_paginate_c @positive_energies %>

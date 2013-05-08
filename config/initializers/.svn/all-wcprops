@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/config/initializers/inflections.rb
+END
+amqp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/GCR/GRS/!svn/ver/1901/Projects/Techplatform/config/initializers/amqp.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/config/initializers/session_store.rb
+END
+init_logger.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/GCR/GRS/!svn/ver/1901/Projects/Techplatform/config/initializers/init_logger.rb
+END
+casclient.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/config/initializers/casclient.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/config/initializers/secret_token.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/config/initializers/backtrace_silencers.rb
+END
+bullet.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/GCR/GRS/!svn/ver/1536/Projects/Techplatform/config/initializers/bullet.rb
+END
+active_record.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/config/initializers/active_record.rb
+END
+simple_form_bootstrap.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/GCR/GRS/!svn/ver/1103/Projects/Techplatform/config/initializers/simple_form_bootstrap.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/config/initializers/mime_types.rb
+END
+simple_form.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/GCR/GRS/!svn/ver/1103/Projects/Techplatform/config/initializers/simple_form.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/config/initializers/wrap_parameters.rb
+END

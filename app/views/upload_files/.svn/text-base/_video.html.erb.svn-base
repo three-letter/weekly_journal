@@ -1,0 +1,7 @@
+<div class="upload_file" id="upload_file_<%= video.id %>">
+  <%#= video_path(video.video_url, :controls => true, :autobuffer => true, :size => "320x320") %>
+  <div class="flowplayer" style="width: 480px; height: 200x;">
+     <video src="<%= video.video_url %>"></video>
+  </div>
+  <%= link_to "x", video, :confirm => '确定吗?', :method => :delete, :class => 'btn btn-mini btn-danger', :remote => true %>
+</div>

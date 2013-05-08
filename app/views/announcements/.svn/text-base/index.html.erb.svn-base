@@ -1,0 +1,31 @@
+<% content_for :title, "全站通告" %>
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %> <span class="divider">/</span></li>
+  <li class="active">全站通告</li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>信息</th>
+      <th>开始时间</th>
+      <th>结束时间</th>
+      <th width = 80px>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @announcements.each do |announcement| %>
+      <tr>
+        <td><%= announcement.message %></td>
+        <td><%= announcement.starts_at.to_s(:time) %></td>
+        <td><%= announcement.ends_at.to_s(:time) %></td>
+        <td>
+          <%= link_to edit_icon, edit_announcement_path(announcement) %>&nbsp;&nbsp;&nbsp;
+          <%= link_to delete_icon, announcement_path(announcement), :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "新建", new_announcement_path, :class => 'btn btn-primary' %>

@@ -1,0 +1,4 @@
+<%= simple_form_for UploadFile.new, :html => { :class => 'form-horizontal', :id => "new_video" } do |f| %>
+  <%= f.input :video, multiple: true, name: "upload_file[video]", :type => :file, :label => "请选择视频" %>
+<% end %>
+

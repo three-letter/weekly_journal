@@ -1,0 +1,34 @@
+# -*- encoding : utf-8 -*-
+# == Schema Information
+#
+# Table name: positive_energies
+#
+#  id         :integer          not null, primary key
+#  content    :text
+#  user_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+class PositiveEnergy < ActiveRecord::Base
+  attr_accessible :content, :user_id
+  belongs_to :author, :class_name => "User", :foreign_key => "user_id"
+  validates_presence_of :content, :message => "内容不能为空！"
+
+  def self.get_luck
+		PositiveEnergy.uniq_authors.sample.positive_energies.sample
+  end
+  
+  def author_name
+    author.name
+  end
+    
+  private
+  def self.uniq_authors
+    results = []
+    PositiveEnergy.select(:user_id).uniq.all.map(&:user_id).each do |user_id|
+      results << User.find_by_id(user_id)
+    end
+    results
+  end
+end

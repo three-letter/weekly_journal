@@ -1,0 +1,14 @@
+<%= simple_form_for @code_review do |f| %>
+  <div class="control-group">
+    <div class="span6">
+       <%= f.input :title, :input_html => {:class => "span7"}, :label => "标题" %>
+         <div class="controls">
+           <%= geditor_buttons %>
+         </div>
+         <%= f.input :content, :label => "内容", :input_html => {:class => "span7", :rows => "18", :id => "geditor"} %>       
+       <div class="controls"><%= hidden_field_tag :week, params[:week] %>
+       <%= f.submit "提交", :class => 'btn btn-primary' %>
+     </div>
+    </div>
+  </div>
+<% end %>

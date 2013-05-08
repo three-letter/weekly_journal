@@ -1,0 +1,27 @@
+<div class="pagination" id="weeks">
+  <ul>
+    <% css_class = (previous_week == params[:week].to_i) ? "active" : "" %>
+    <li class="<%= css_class %>"><%= link_to "上周", weekly_journals_path(:week => previous_week) %></li>
+    <% css_class = (params[:week].nil? || this_week == params[:week].to_i) ? "active" : "" %>
+    <li class="<%= css_class %>"><%= link_to "本周", weekly_journals_path(:week => this_week) %></li>
+    <% css_class = (next_week == params[:week].to_i) ? "active" : "" %>
+    <li class="<%= css_class %>"><%= link_to "下周", weekly_journals_path(:week => next_week) %></li>
+    <li><%= link_to "更多", "javascript:toggleMoreWeeks();" %></li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+function toggleMoreWeeks() {
+  $("#weeks").toggle();
+  $("#more_weeks").toggle();
+}
+</script>
+<br>
+<div class="pagination" id="more_weeks" style="display:none">
+  <ul>
+    <% WeeklyJournal.weeks_info.each do |week| %>
+      <% css_class = (week == params[:week].to_i) ? "active" : "" %>
+      <li class="<%= css_class %>"><%= link_to week_info(week), weekly_journals_path(:week => week) %></li>
+    <% end %>
+  </ul>
+</div>

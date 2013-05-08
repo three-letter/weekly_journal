@@ -1,0 +1,38 @@
+<div class="media" id="whole_comment<%= comment.id %>">
+  <hr>
+  <a class="pull-left" href="<%= posts_path(:user_id => comment.author.id) %>" target="_blank" >
+    <%= avatar(comment.author) %>
+  </a>
+  <div class="media-body">
+    <p>
+      &nbsp;&nbsp;&nbsp;
+      <small>
+        <%= link_to comment.author_name, posts_path(:user_id => comment.author.id) %>&nbsp;
+        <%= comment.created_at.to_s(:time) %>&nbsp;&nbsp;&nbsp;
+        <%= link_to raw("<i class='icon-envelope'></i>"), "javascript:toggleDiv('replay_form#{comment.id}');" %>&nbsp;&nbsp;&nbsp;
+        <%= link_to delete_icon, comment, :method => :delete, :remote => true, :data => { :confirm => "确定吗？" } if current_user.can_edit?(comment) %>
+        <br>
+        <blockquote>
+          <%= g_format comment.content %>
+        </blockquote>
+      </small>
+    </p>
+    <script type="text/javascript">
+    function toggleDiv(divId) {
+       $("#"+divId).toggle();
+    }
+    </script>
+    <br>
+    <div id="replay_form<%= comment.id %>" style="display:none">
+      <%= simple_form_for Comment.new, :remote => true do |f| %>
+        <%= f.input :content, :label => "回复给#{comment.author_name}", :input_html => { :class => "span8", :rows => 6, :id => "content#{comment.id}" } %>
+        <%= hidden_field_tag :weekly_journal_id, @weekly_journal.id %>
+        <%= hidden_field_tag :comment_id, comment.id %>
+        <%= f.submit "提交", :class => 'btn btn-primary' %>
+      <% end %>
+    </div>
+    <div id="comment_group<%= comment.id %>">
+      <%= render @comments if @comments = comment.comments %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  host: 192.168.2.140
+  database: think
+  encoding: unicode
+  port: 9999
+  username: think
+  password: www.baidu.c0m
+  pool: 5
+ 
+production:
+  adapter: postgresql
+  host: 192.168.2.140
+  database: think
+  encoding: unicode
+  port: 9999
+  username: think
+  password: www.baidu.c0m
+  pool: 5

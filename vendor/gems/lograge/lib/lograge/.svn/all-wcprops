@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/lib/lograge
+END
+log_subscriber.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/lib/lograge/log_subscriber.rb
+END
+version.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/lib/lograge/version.rb
+END
+railtie.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/GCR/GRS/!svn/ver/1900/Projects/Techplatform/vendor/gems/lograge/lib/lograge/railtie.rb
+END

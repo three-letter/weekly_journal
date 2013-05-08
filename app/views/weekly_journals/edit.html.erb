@@ -1,0 +1,9 @@
+<% content_for :title, "周反思" %>
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %> <span class="divider">/</span></li>
+  <li><%= link_to "周反思", weekly_journals_path(:week => @weekly_journal.week) %><span class="divider">/</span></li>
+  <li><%= link_to @weekly_journal.title, @weekly_journal %><span class="divider">/</span></li>
+  <li class="active">编辑周反思</li>
+</ul>
+
+<%= render 'form' %>

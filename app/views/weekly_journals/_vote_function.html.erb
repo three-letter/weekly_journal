@@ -1,0 +1,15 @@
+<% if current_user.voted_on_week?(weekly_journal.week) %>
+
+  <% vote_times = weekly_journal.votes_count %>
+  <% result = case vote_times
+        when 0
+          ""
+        when 1
+          "<i class='icon-thumbs-up'></i>"
+        else
+          "#{vote_times} x <i class='icon-thumbs-up'></i>"
+        end %>
+  <%= raw result %>
+<% else %>
+  <%= link_to "投票", vote_weekly_journal_path(weekly_journal), :method => :post, :class => 'btn' %>
+<% end %>

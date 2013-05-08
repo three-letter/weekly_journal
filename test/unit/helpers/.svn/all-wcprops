@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/GCR/GRS/!svn/ver/1935/Projects/Techplatform/test/unit/helpers
+END
+positive_energies_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/test/unit/helpers/positive_energies_helper_test.rb
+END
+comments_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/GCR/GRS/!svn/ver/1182/Projects/Techplatform/test/unit/helpers/comments_helper_test.rb
+END
+upload_files_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/GCR/GRS/!svn/ver/1114/Projects/Techplatform/test/unit/helpers/upload_files_helper_test.rb
+END
+statistics_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/GCR/GRS/!svn/ver/1711/Projects/Techplatform/test/unit/helpers/statistics_helper_test.rb
+END
+announcements_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/GCR/GRS/!svn/ver/1536/Projects/Techplatform/test/unit/helpers/announcements_helper_test.rb
+END
+journals_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/GCR/GRS/!svn/ver/1916/Projects/Techplatform/test/unit/helpers/journals_helper_test.rb
+END
+weekly_journals_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/test/unit/helpers/weekly_journals_helper_test.rb
+END
+code_reviews_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/GCR/GRS/!svn/ver/1935/Projects/Techplatform/test/unit/helpers/code_reviews_helper_test.rb
+END
+user_actions_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/test/unit/helpers/user_actions_helper_test.rb
+END

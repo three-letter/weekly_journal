@@ -1,0 +1,21 @@
+<% content_for :title, "个人首页" %>
+<br>
+<% @weekly_journals.each do |weekly_journal| %>
+  <div class="dl-horizontal">
+  	 <h3>
+  		<%= link_to weekly_journal.title, weekly_journal, :target => '_blank' %>&nbsp;<span class="badge badge-success"><%= weekly_journal.relative_comments.count %></span>
+  	 </h3>
+    <div>
+      <%= weekly_journal.author_name %> &nbsp;<%= weekly_journal.created_at.to_s(:time) %>
+    </div>
+    <dl class="dl-horizontal">
+  		<br>
+  		<%= g_format weekly_journal.content %>
+    </dl>
+	<br>
+	<hr>
+	<br>
+  </div>
+<% end %>
+
+<%= will_paginate_c @weekly_journals %>

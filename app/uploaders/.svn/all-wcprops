@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/GCR/GRS/!svn/ver/1553/Projects/Techplatform/app/uploaders
+END
+image_uploader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/GCR/GRS/!svn/ver/1114/Projects/Techplatform/app/uploaders/image_uploader.rb
+END
+video_uploader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/GCR/GRS/!svn/ver/1319/Projects/Techplatform/app/uploaders/video_uploader.rb
+END
+avatar_uploader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/GCR/GRS/!svn/ver/1553/Projects/Techplatform/app/uploaders/avatar_uploader.rb
+END

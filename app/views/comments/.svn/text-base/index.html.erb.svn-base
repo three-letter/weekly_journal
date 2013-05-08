@@ -1,0 +1,47 @@
+<% content_for :title, "回复" %>
+<ul class="breadcrumb">
+  <li><%= link_to "首页", root_path %> <span class="divider">/</span></li>
+  <li class="active">回复</li>
+</ul>
+
+
+<%= search_form_for @search, :class => "form-search" do |f| %>
+<%= f.text_field :content_cont, :class => "input-medium search-query", :placeholder => "内容" %>
+  <%= f.text_field :author_name_cont, :class => "input-medium search-query", :placeholder => "姓名" %>
+  </span>
+  <%= f.submit "搜索", :class => "btn" %>
+<% end %>
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>周反思ID</th>
+      <th>周</th>
+      <th>内容</th>
+      <th width = 60px>作者</th>
+      <th width = 120px>时间</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <% @comments.each do |comment| %>
+      <tr>
+        <td><%= comment.id %></td>
+        <td><%= comment.weekly_journal_id %></td>
+         <td><%= comment.weekly_journal.week %></td>
+        <td><%= comment.content %></td>  
+        <td><%= comment.author_name %></td>
+        <td>
+          <%= comment.created_at.to_s(:time) %>
+        </td>
+       
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<%= will_paginate_c @comments %>

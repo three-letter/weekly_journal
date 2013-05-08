@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "静思堂" %></title>
+    <%= csrf_meta_tags %>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+  </head>
+  <body>
+    <%= render "shares/navigation" %>
+    <%= render "shares/announcement" %>
+    <div class="container">
+      <div class="alert-">
+        <% flash.each do |name, msg| %>
+            <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+              <a class="close" data-dismiss="alert">x</a>
+              <%= msg %>
+            </div>
+        <% end %>
+      </div>
+
+      <div class="container">
+        <div class="row">
+           <div class="span9">
+             <%= yield %>
+           </div>
+           <div class="span3">
+             <div class="well sidebar-nav">
+               <ul class="nav nav-list">
+                 <% score = current_user.progress_percentage_on_week(@week) %>
+                 <li class="nav-header">当周完成情况:&nbsp;<%= score %>%</li>
+                 <small>
+
+                   <%
+                    case score
+                    when 0 .. 99
+                      process_class = "progress progress-warning"
+                    when 100 .. 120
+                      process_class = "progress progress-success"
+                    when 120 .. 400
+                      process_class = "progress-danger"
+                    end
+                    %>
+
+                   <div class="<%= process_class %>"><div class="bar" style="width:  <%= score %>%"></div></div>
+                   <div id="progress_details">
+                     <li><% if current_user.weekly_journals.on_week(@week).present? %>已提交<% else %>未提交<% end %></li>
+                     <li>已回复<%= current_user.comment_times_on_week(@week) %>次</li>
+                     <li><% if current_user.voted_on_week?(@week) %>已投票<% else %>未投票<% end %></li>
+                 </div>
+                 </small>
+                 <hr>
+                 <li class="nav-header">当前周排名</li>
+                 <% WeeklyJournal.hotest_five_on_week(@week).each_with_index do |weekly_journal, i| %>
+                   <small><li><%= i + 1 %>. <%= link_to(weekly_journal.title, weekly_journal) %> - <%= link_to(weekly_journal.author_name, posts_path(:user_id => weekly_journal.author.id)) %></li></small>
+                 <% end %>
+                 <hr>
+                 <li class="nav-header">规则</li>
+                 <small>
+                   <li>1. 周一早9点前完成上周周反思及上周周反思投票</li>
+                   <li>2. 周一下班前完成上一周回复，且回复数量不少于15篇</li>
+                   <li>3. 得分 = 投票*10 + 被回复次数*2 + 浏览次数 </li>
+                  </small>
+               </ul>
+             </div>
+           </div>
+        </div><!--/row-->
+      </div><!--/content-->
+      <br><br><br><hr>
+      <%= render "shares/footer" %>
+    </div> <!-- /container -->
+  </body>
+</html>

@@ -1,0 +1,126 @@
+# -*- encoding : utf-8 -*-
+# == Schema Information
+#
+# Table name: users
+#
+#  id          :integer          not null, primary key
+#  login       :string(255)
+#  email       :string(255)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  name        :string(255)
+#  employee_id :string(255)
+#  avatar      :string(255)
+#
+
+class User < ActiveRecord::Base
+  attr_accessible :email, :login, :employee_id, :avatar, :remote_avatar_url, :name
+  has_many :weekly_journals
+  has_many :positive_energies
+  has_many :comments
+  has_many :weekly_journal_votes
+  has_many :journals
+  has_many :code_reviews
+  mount_uploader :avatar, AvatarUploader
+
+  ADMINS = ["zhangz-c", "hanxm"]
+  USERS_FROM_CMD = %w(高思宇 尚进 邸龙 雷昆 徐敏才 孔德明 黄鹏 徐珊珊 陈飞 段冰 李鹏磊 张树坤 林伟 张俊青 贾延平 陈燕飞 刘丝 刘俊 刘文民 王丹丹 张静菲 王静 张哲 韩小明 王庆彬 马元帅 林超 崔栋超 顾艳玲 伍岳 刘华建 周剑 刘之岗 张传社)
+
+  def self.users_from_cmd
+    users = User.where(:name => USERS_FROM_CMD)
+    users.map(&:login)
+  end
+
+  def default_receivers
+    self.journals.last.try(:receivers)
+  end
+
+  def self.all_of_cmd(week)
+    users = User.where(:name => USERS_FROM_CMD)
+    (users.sort_by {|user| user.score_on_week?(week)}).reverse
+  end
+
+  def self.fetch_by_login(login)
+		unless user = self.find_by_login(login)
+      user_info_from_remote = get_user_info(login)
+      user = User.create(:login => login, :email => user_info_from_remote[:mail], :name => user_info_from_remote[:full_name], :employee_id => user_info_from_remote[:id])
+    end
+    return user
+  end
+
+ # should be in WeeklyJournal model
+  def score_on_week?(week)
+    result = 0
+    if weekly_journals.on_week(week).present?
+      result += 1
+    end
+    if voted_on_week?(week)
+      result += 1
+    end
+    if (comment_times_on_week(week) >= 15)
+      result += 1
+    end
+    result
+  end
+
+  # should be in WeeklyJournal model
+  def progress_percentage_on_week(week)
+    result = 0
+    result += 20 if weekly_journals.on_week(week).present?
+    result += [comment_times_on_week(week) * 4, 60].min
+    result += 20 if voted_on_week?(week)
+    result
+  end
+
+  def vote!(weekly_journal)
+    if weekly_journal_votes.find_by_week(weekly_journal.week.to_s)
+      return "您已经投过票！"
+    else
+      weekly_journal_votes.create(value: 1, weekly_journal_id: weekly_journal.id)
+      return "投票成功！"
+    end
+  end
+
+  def voted_on_week?(week)
+    return true if weekly_journal_votes.find_by_week(week.to_s)
+  end
+
+  def can_edit?(item)
+    item.author == self || self.admin?
+  end
+
+  def admin?
+    ADMINS.include? self.login
+  end
+
+  # for that week's journal, no time limit
+  def comment_times_on_week(week)
+    comments.on_week(week).try(:count)
+  end
+
+  # FIXME
+  def comment_times_on_week_with_time_limit(week)
+    comments.on_week(week).select{|comment| Week.get_time(week).end_of_week > comment.created_at && comment.created_at > Week.get_time(week).beginning_of_week}.count
+  end
+
+  #private
+  def self.get_user_info(login)
+    result = {}
+    client = Savon::Client.new do
+      wsdl.document = "http://my.grandsoft.com.cn/HRServer/HRServer.dll/wsdl/IOrgnization"
+    end
+    response = client.request(:find_employee) do |soap|
+      soap.input = ["FindEmployee"]
+      soap.body = "<AID xsi:type=\"xsd:string\">#{login}</AID>"
+    end
+    result = response.body[:t_employee_info]
+
+    response = client.request(:get_dept_info) do |soap|
+      soap.input = ["GetDeptInfo"]
+      soap.body = "<ADeptID xsi:type=\"xsd:string\">012603</ADeptID>"
+    end
+
+    result[:department] =  response.body[:get_dept_info_response][:return]
+    result
+  end
+end

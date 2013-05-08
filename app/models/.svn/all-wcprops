@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/GCR/GRS/!svn/ver/2647/Projects/Techplatform/app/models
+END
+action_role.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/app/models/action_role.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/GCR/GRS/!svn/ver/2642/Projects/Techplatform/app/models/user.rb
+END
+role.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/app/models/role.rb
+END
+comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/GCR/GRS/!svn/ver/2647/Projects/Techplatform/app/models/comment.rb
+END
+upload_file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/GCR/GRS/!svn/ver/2575/Projects/Techplatform/app/models/upload_file.rb
+END
+weekly_journal_vote.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/GCR/GRS/!svn/ver/1910/Projects/Techplatform/app/models/weekly_journal_vote.rb
+END
+announcement.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/app/models/announcement.rb
+END
+journal.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/app/models/journal.rb
+END
+weekly_journal.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/GCR/GRS/!svn/ver/2632/Projects/Techplatform/app/models/weekly_journal.rb
+END
+code_review.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/GCR/GRS/!svn/ver/2458/Projects/Techplatform/app/models/code_review.rb
+END
+positive_energy.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/GCR/GRS/!svn/ver/1536/Projects/Techplatform/app/models/positive_energy.rb
+END
+user_action.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/GCR/GRS/!svn/ver/1397/Projects/Techplatform/app/models/user_action.rb
+END
+week.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/GCR/GRS/!svn/ver/2645/Projects/Techplatform/app/models/week.rb
+END
+mq_logger.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/GCR/GRS/!svn/ver/1901/Projects/Techplatform/app/models/mq_logger.rb
+END

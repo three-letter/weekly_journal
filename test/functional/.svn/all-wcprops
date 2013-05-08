@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/GCR/GRS/!svn/ver/1935/Projects/Techplatform/test/functional
+END
+journals_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/GCR/GRS/!svn/ver/1916/Projects/Techplatform/test/functional/journals_controller_test.rb
+END
+weekly_journals_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/GCR/GRS/!svn/ver/1182/Projects/Techplatform/test/functional/weekly_journals_controller_test.rb
+END
+code_reviews_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/GCR/GRS/!svn/ver/1935/Projects/Techplatform/test/functional/code_reviews_controller_test.rb
+END
+user_actions_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/GCR/GRS/!svn/ver/1094/Projects/Techplatform/test/functional/user_actions_controller_test.rb
+END
+positive_energies_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/GCR/GRS/!svn/ver/1103/Projects/Techplatform/test/functional/positive_energies_controller_test.rb
+END
+comments_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/GCR/GRS/!svn/ver/1319/Projects/Techplatform/test/functional/comments_controller_test.rb
+END
+upload_files_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/GCR/GRS/!svn/ver/1114/Projects/Techplatform/test/functional/upload_files_controller_test.rb
+END
+statistics_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/GCR/GRS/!svn/ver/1711/Projects/Techplatform/test/functional/statistics_controller_test.rb
+END

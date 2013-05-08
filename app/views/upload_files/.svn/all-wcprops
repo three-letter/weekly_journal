@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/GCR/GRS/!svn/ver/1914/Projects/Techplatform/app/views/upload_files
+END
+_video.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/GCR/GRS/!svn/ver/1269/Projects/Techplatform/app/views/upload_files/_video.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/GCR/GRS/!svn/ver/1914/Projects/Techplatform/app/views/upload_files/index.html.erb
+END
+_videos.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/GCR/GRS/!svn/ver/1242/Projects/Techplatform/app/views/upload_files/_videos.html.erb
+END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/GCR/GRS/!svn/ver/1242/Projects/Techplatform/app/views/upload_files/create.js.erb
+END
+_image.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/GCR/GRS/!svn/ver/1914/Projects/Techplatform/app/views/upload_files/_image.html.erb
+END
+destroy.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/GCR/GRS/!svn/ver/1273/Projects/Techplatform/app/views/upload_files/destroy.js.erb
+END
+_images.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/GCR/GRS/!svn/ver/1242/Projects/Techplatform/app/views/upload_files/_images.html.erb
+END

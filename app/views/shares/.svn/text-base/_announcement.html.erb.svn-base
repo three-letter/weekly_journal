@@ -1,0 +1,14 @@
+<% if current_announcement.present? %>
+  <div class="alert alert-info">
+    <button id="hide_announcement" type="button" class="close btn" data-dismiss="alert" data=<%= current_announcement.id %>>知道啦</button>
+    <%= current_announcement.message %>
+  </div>
+<% end %>
+
+<script>
+  $(document).ready(function(){
+    $("#hide_announcement").click(function () {
+       $.post("/announcements/" + this.getAttribute("data") + "/hide" );
+     });
+   });
+</script>

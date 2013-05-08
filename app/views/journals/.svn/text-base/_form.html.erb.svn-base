@@ -1,0 +1,14 @@
+<%= simple_form_for @journal do |f| %>
+  <div class="control-group">
+    <div class="span6">
+       <div class="controls">
+       </div>
+       <%= f.input :content, :label => "内容", :input_html => {:class => "span7", :rows => "18"} %>
+       <%= f.input :receivers, :input_html => {:class => "span7"}, :label => "抄送邮件给(以半角逗号分开)" %>
+       <%= auto(receiver_list_journals_path,@journal.receivers.split(',')) %>
+       <div class="controls">
+         <%= f.submit "提交", :class => 'btn btn-primary' %>
+       </div>
+    </div>
+  </div>
+<% end %>

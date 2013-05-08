@@ -1,0 +1,35 @@
+<% content_for :title, "权限管理" %>
+<div id="hint" style="display:none">
+</div>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td>用户</td>
+      <% @user_actions.each do |user_action| %>
+        <td>
+          <%= user_action.action_name %>
+        </td>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+   <% @roles.each do |role| %>
+    <tr>
+      <td>
+        <%= role.name %>
+      </td>
+        <% @user_actions.each_with_index do |user_action, i| %>
+        	<% action_role = ActionRole.fetch_by_role_id_and_user_action_id(role.id, user_action.id) %>
+        	<td>
+          	<%= form_for action_role, :url => toggle_action_roles_path, :method => :post, remote: true, :html => { :class => "toggle_privileges_managements" } do |f| %>
+	            <%= hidden_field_tag :user_action_id, user_action.id %>
+	            <%= hidden_field_tag :role_id, role.id %>
+	            <%= check_box_tag :has_right, '', action_role.id %>
+	          <% end %>
+        <% end %>
+      </td> 
+    </tr>
+   <% end %>
+  </tbody>
+</table>

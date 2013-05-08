@@ -1,0 +1,17 @@
+defaults: &defaults
+  host: 192.168.2.135
+  port: 5672
+  user: guest
+  pass: guest
+  vhost: "/"
+  connection_timeout: 3
+
+test:
+  <<: *defaults
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  host: 192.168.2.135
